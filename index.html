@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>High Low Game</title>
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!--Linking CSS File--> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="text-center" *ngIf="loading">
+        <img src="https://media1.giphy.com/media/3Xw8jY3zbFRtFd6eK8/source.gif">       
+      </div>
+        <div id ="page-wrap">
+        <h1>High Low Game!</h1>
+        <p class> Enter a number from 1 to 100 </p>
+        <div class="container">
+            <div class= "row justify-content-center">
+                <div class="col-xs-4">
+                    <div class="input-group mb-3">
+                        <input id="number" type="text" class="form-control" placeholder="guess a number">
+                    </div>
+                </div>
+            </div>    
+            <button type="button" class="btn btn-primary" onClick="checkresult()">Guess</button>
+            <h2 id="result"></h2>
+            
+            
+            <button id="reset" onclick=reset() class="button">
+  Reset Game
+</button>
+
+<div id="gameReset" class="message"></div>
+
+        </div>    
+    
+        <!--Linking Javascript File--> 
+        <script type="text/javascript" src="script.js"></script>
+ 
+       <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    </body>
+    </html>    
+

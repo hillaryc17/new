@@ -1,0 +1,23 @@
+.center {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 10px;
+}
+
+#page-wrap {
+  text-align: center
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+body {
+  background-color: #DAF7A6 ;
+}
+
+h1 {
+font-family: 'Staatliches', cursive;
+}
